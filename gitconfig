@@ -1,0 +1,2 @@
+git config --global alias.st status
+git config --global alias.co 'commit -am'
