@@ -1,0 +1,69 @@
+# conky configuration
+background yes
+use_xft yes
+xftfont mono:size=8
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_class Conky
+own_window_type normal
+own_window_argb_visual yes
+own_window_argb_value 180
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 300
+maximum_width 200
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color FFFFFF
+default_shade_color 000000
+default_outline_color FFFFFF
+alignment top_right
+gap_x 10
+gap_y 40
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+TEXT
+${font mono:bold:size=8}${nodename}${alignr}${font mono:normal:size=8}${kernel}
+${font mono:bold:size=8}uptime:${alignr}${font mono:normal:size=8}${uptime}
+
+${hr}
+
+${font mono:bold:size=8}${wireless_essid}${alignr}${font mono:normal:size=8}${wireless_link_qual}%
+${font mono:bold:size=8}internal:${alignr}${font mono:normal:size=8}${addr wlo1}
+${font mono:bold:size=8}external:${alignr}${font mono:normal:size=8}${exec curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'}
+
+${hr}
+
+${font mono:bold:size=8}batt: ${font mono:normal:size=8}${battery_percent BAT0}% ${battery_bar BAT0}
+
+${hr}
+
+${font mono:bold:size=8}cpu0: ${font mono:normal:size=8}${cpu cpu0}% ${cpubar cpu0}
+${font mono:bold:size=8}cpu1: ${font mono:normal:size=8}${cpu cpu1}% ${cpubar cpu1}
+${font mono:bold:size=8}cpu2: ${font mono:normal:size=8}${cpu cpu2}% ${cpubar cpu2}
+${font mono:bold:size=8}cpu3: ${font mono:normal:size=8}${cpu cpu3}% ${cpubar cpu3}
+
+${hr}
+
+${font mono:bold:size=8}ram: ${font mono:normal:size=8}$memperc% ${membar}
+
+${hr}
+
+${font mono:bold:size=8}root ${alignr}${font mono:normal:size=8}${fs_used /} / ${fs_size /}
+${fs_bar /}${if_mounted /media/paul/ENIGMA}
+${font mono:bold:size=8}enigma ${alignr}${font mono:normal:size=8}${fs_used /media/paul/ENIGMA} / ${fs_size /media/paul/ENIGMA}
+${fs_bar /media/paul/ENIGMA}$endif
+${if_mounted /media/paul/HULK}${font mono:bold:size=8}hulk ${alignr}${font mono:normal:size=8}${fs_used /media/paul/HULK} / ${fs_size /media/paul/HULK}
+${fs_bar /media/paul/HULK}$endif
+${hr}
+
+${font mono:normal:size=8}${alignc}Dropbox status: ${font mono:bold:size=8}${execi 6 dropbox status}
+
+${hr}
