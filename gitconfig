@@ -1,2 +1,4 @@
+git config --global user.email "yeppaul2@gmail.com"
+git config --global user.name "Paul Schaefer"
 git config --global alias.st status
 git config --global alias.co 'commit -am'
