@@ -1,4 +1,5 @@
-# conky configuration
+# Paul's Conky configuration!
+# https://github.com/pschfr/dotfiles
 background yes
 use_xft yes
 xftfont mono:size=10
@@ -19,41 +20,41 @@ draw_shades no
 draw_outline no
 draw_borders no
 draw_graph_borders no
-default_color FFFFFF
-default_shade_color 000000
-default_outline_color FFFFFF
+default_color FFF
+default_shade_color 000
+default_outline_color FFF
 alignment top_right
-gap_x 10
-gap_y 40
+gap_x 320
+gap_y 1060
 no_buffers yes
 uppercase no
 cpu_avg_samples 2
 override_utf8_locale no
+xftfont mono:size=10
 TEXT
-${font mono:bold:size=10}${nodename}${alignr}${font mono:bold:size=10}${uptime}
-${font mono:normal:size=10}${wireless_essid}${alignr}${font mono:normal:size=10}${addr wlo1}
+${alignc}${execi 60 lsb_release -d | cut -f 2| tr "[:upper:]" "[:lower:]"}
+${font mono:size=10}${alignc}${uptime}
+
+${wireless_essid}${alignr}${addr wlo1}
 
 
-${font mono:bold:size=10}batt ${font mono:normal:size=10}${battery_percent BAT0}% ${battery_bar BAT0}
+batt ${battery_percent BAT0}% ${battery_bar BAT0}
 
 
-${font mono:bold:size=10}cpu0 ${font mono:normal:size=10}${cpu cpu0}% ${cpubar cpu0}
-${font mono:bold:size=10}cpu1 ${font mono:normal:size=10}${cpu cpu1}% ${cpubar cpu1}
-${font mono:bold:size=10}cpu2 ${font mono:normal:size=10}${cpu cpu2}% ${cpubar cpu2}
-${font mono:bold:size=10}cpu3 ${font mono:normal:size=10}${cpu cpu3}% ${cpubar cpu3}
+cpu0 ${cpu cpu0}% ${cpubar cpu0}
+cpu1 ${cpu cpu1}% ${cpubar cpu1}
+cpu2 ${cpu cpu2}% ${cpubar cpu2}
+cpu3 ${cpu cpu3}% ${cpubar cpu3}
 
 
-${font mono:bold:size=10}ram ${font mono:normal:size=10}$memperc% ${membar}
+ram $memperc% ${membar}
 
 
-${font mono:bold:size=10}root ${alignr}${font mono:normal:size=10}${fs_used /} / ${fs_size /}
+root ${alignr}${fs_used /} / ${fs_size /}
 ${fs_bar /}${if_mounted /media/paul/ENIGMA}
-${font mono:bold:size=10}enigma ${alignr}${font mono:normal:size=10}${fs_used /media/paul/ENIGMA} / ${fs_size /media/paul/ENIGMA}
+enigma ${alignr}${fs_used /media/paul/ENIGMA} / ${fs_size /media/paul/ENIGMA}
 ${fs_bar /media/paul/ENIGMA}$endif
-${if_mounted /media/paul/HULK}${font mono:bold:size=10}hulk ${alignr}${font mono:normal:size=10}${fs_used /media/paul/HULK} / ${fs_size /media/paul/HULK}
+${if_mounted /media/paul/HULK}hulk ${alignr}${fs_used /media/paul/HULK} / ${fs_size /media/paul/HULK}
 ${fs_bar /media/paul/HULK}$endif
 
-${font mono:normal:size=10}${alignc}Dropbox: ${font mono:bold:size=10}${execi 6 dropbox status}
-
-
-${font mono:normal:size=10}${execi 120 fortune | fold -w26}
+${alignc}Dropbox: ${execi 6 dropbox status}
