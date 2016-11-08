@@ -47,14 +47,21 @@ cpu2 ${cpu cpu2}% ${cpubar cpu2}
 cpu3 ${cpu cpu3}% ${cpubar cpu3}
 
 
-ram $memperc% ${membar}
+ram ${alignr}$memperc% of $memmax
+${membar}
 
 
-root ${alignr}${fs_used /} / ${fs_size /}
+root ${alignr}${fs_used_perc /}% of ${fs_size /}
 ${fs_bar /}${if_mounted /media/paul/ENIGMA}
-enigma ${alignr}${fs_used /media/paul/ENIGMA} / ${fs_size /media/paul/ENIGMA}
+enigma ${alignr}${fs_used_perc /media/paul/ENIGMA}% of ${fs_size /media/paul/ENIGMA}
 ${fs_bar /media/paul/ENIGMA}$endif
-${if_mounted /media/paul/HULK}hulk ${alignr}${fs_used /media/paul/HULK} / ${fs_size /media/paul/HULK}
+${if_mounted /media/paul/HULK}hulk ${alignr}${fs_used_perc /media/paul/HULK}% of ${fs_size /media/paul/HULK}
 ${fs_bar /media/paul/HULK}$endif
 
 ${alignc}Dropbox: ${execi 6 dropbox status}
+
+${alignc}pschfr.github.io
+${execi 6 cd ~/Dropbox/Work/pschfr.github.io; git st |  sed -n 2p}
+
+${alignc}start
+${execi 6 cd ~/Dropbox/Work/Start; git st |  sed -n 2p}
