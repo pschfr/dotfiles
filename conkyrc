@@ -31,14 +31,14 @@ ${execi 60 lsb_release -d | cut -f 2}${alignr}${uptime}
 ${wireless_essid} ${alignr}${addr wlo1}
 
 
-battery ${alignr}${battery_percent BAT0}%
+Battery ${alignr}${battery_percent BAT0}%
 ${battery_bar BAT0}
 
 
-cpu -------------${alignr}${freq_g}GHz
+CPU -------------${alignr}${freq_g}GHz
 ${cpugraph cpu0}
 
-ram -------------${alignr}$mem
+RAM -------------${alignr}$mem
 ${memgraph}
 
 I/O -------------${alignr}$diskio_write
@@ -50,12 +50,11 @@ enigma ${alignr}${fs_used_perc /media/paul/ENIGMA}% of ${fs_size /media/paul/ENI
 ${fs_bar /media/paul/ENIGMA}$endif
 
 
-dropbox ${hr}
+Dropbox ${hr}
 ${execi 6 dropbox status}
 
 pschfr.github.io ${hr}
 ${execi 6 cd ~/Dropbox/Work/pschfr.github.io; git st | sed -n 2p}
 
-start ${hr}
+Start ${hr}
 ${execi 6 cd ~/Dropbox/Work/Start; git st | sed -n 2p}
-
