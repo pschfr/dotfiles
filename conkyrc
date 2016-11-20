@@ -24,39 +24,35 @@ no_buffers yes
 cpu_avg_samples 2
 override_utf8_locale no
 TEXT
-${alignc}${execi 60 lsb_release -d | cut -f 2}
-${alignc}${kernel}
+${font mono:bold:size=10}${alignc}${execi 60 lsb_release -d | cut -f 2}
+${font mono:size=10}${alignc}${kernel}
 
-uptime${alignr}${uptime}
-
-${wireless_essid} ${alignr}${addr wlo1}
-
-
-Battery ${alignr}${battery_percent BAT0}%
-${battery_bar BAT0}
+${font mono:bold:size=10}uptime${font mono:size=10}${alignr}${uptime}
+${font mono:bold:size=10}${wireless_essid} ${font mono:size=10}${alignr}${addr wlo1}
+${font mono:bold:size=10}battery${font mono:size=10}${alignr}${battery_percent BAT0}%
 
 
-CPU${alignr}${freq_g}GHz
+${font mono:bold:size=10}CPU${font mono:size=10}${alignr}${freq_g}GHz
 ${cpugraph cpu0}
 
-RAM${alignr}$mem
+${font mono:bold:size=10}RAM${font mono:size=10}${alignr}$mem
 ${memgraph}
 
 
-root${alignr}${fs_used_perc /}% of ${fs_size /}
+${font mono:bold:size=10}root${font mono:size=10}${alignr}${fs_used_perc /}% of ${fs_size /}
 ${fs_bar /}${if_mounted /media/paul/ENIGMA}
-enigma${alignr}${fs_used_perc /media/paul/ENIGMA}% of ${fs_size /media/paul/ENIGMA}
+${font mono:bold:size=10}enigma${font mono:size=10}${alignr}${fs_used_perc /media/paul/ENIGMA}% of ${fs_size /media/paul/ENIGMA}
 ${fs_bar /media/paul/ENIGMA}$endif
 
 
-Dropbox ${hr}
-${execi 6 dropbox status}
+${font mono:bold:size=10}Dropbox ${hr}
+${font mono:size=10}${execi 6 dropbox status}
 
-pschfr.github.io ${hr}
-${execi 6 cd ~/Dropbox/Work/pschfr.github.io; git st | sed -n 2p}
+${font mono:bold:size=10}pschfr.github.io ${hr}
+${font mono:size=10}${execi 6 cd ~/Dropbox/Work/pschfr.github.io; git st | sed -n 2p}
 
-Start ${hr}
-${execi 6 cd ~/Dropbox/Work/Start; git st | sed -n 2p}
+${font mono:bold:size=10}Start ${hr}
+${font mono:size=10}${execi 6 cd ~/Dropbox/Work/Start; git st | sed -n 2p}
 
 
-${alignc}${execi 3600 aptitude search "~U" | wc -l} updates available
+${font mono:bold:size=10}${alignc}${execi 3600 aptitude search "~U" | wc -l} ${font mono:size=10}updates available
