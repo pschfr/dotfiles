@@ -24,7 +24,10 @@ no_buffers yes
 cpu_avg_samples 2
 override_utf8_locale no
 TEXT
-${execi 60 lsb_release -d | cut -f 2}${alignr}${uptime}
+${alignc}${execi 60 lsb_release -d | cut -f 2}
+${alignc}${kernel}
+
+uptime${alignr}${uptime}
 
 ${wireless_essid} ${alignr}${addr wlo1}
 
@@ -56,4 +59,4 @@ Start ${hr}
 ${execi 6 cd ~/Dropbox/Work/Start; git st | sed -n 2p}
 
 
-${alignc}${execi 28000 aptitude search "~U" | wc -l} updates available
+${alignc}${execi 3600 aptitude search "~U" | wc -l} updates available
