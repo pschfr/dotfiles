@@ -1,5 +1,6 @@
 git config --global user.email "yeppaul2@gmail.com"
 git config --global user.name "Paul Schaefer"
 git config --global alias.st status
-git config --global alias.co 'commit -am'
-git config --global credential.helper 'cache --timeout=3600'
+git config --global alias.co "commit -am"
+git config --global credential.helper "cache --timeout=3600"
+git config --global alias.shit "web--browse http://ohshitgit.com/"
