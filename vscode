@@ -1,0 +1,11 @@
+// Place your settings in this file to overwrite the default settings
+{
+	"editor.fontFamily": "Inconsolata",
+	"editor.fontSize": 16,
+	"editor.scrollBeyondLastLine": false,
+	"editor.insertSpaces": false,
+	"editor.wrappingColumn": -1,
+	"editor.cursorBlinking": "smooth",
+	"editor.fontLigatures": true,
+	"editor.renderWhitespace": "boundary"
+}
