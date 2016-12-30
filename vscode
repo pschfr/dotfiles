@@ -1,12 +1,17 @@
 // Place your settings in this file to overwrite the default settings
 {
-	"editor.fontFamily": "Roboto Mono for Powerline",
-	"editor.fontSize": 14,
+	"editor.fontFamily": "'Roboto Mono for Powerline', 'Roboto Mono'",
 	"editor.scrollBeyondLastLine": false,
 	"editor.insertSpaces": false,
 	"editor.wrappingColumn": -1,
 	"editor.cursorBlinking": "smooth",
 	"editor.fontLigatures": true,
 	"editor.renderWhitespace": "boundary",
-	"terminal.integrated.shell.linux": "/bin/zsh"
+	"terminal.integrated.shell.linux": "/bin/zsh",
+	"vsicons.dontShowNewVersionMessage": true,
+	"files.exclude": {
+		"node_modules/": true,
+		"_site/": true,
+		".sass_cache/": true
+	}
 }
