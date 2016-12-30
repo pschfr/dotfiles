@@ -12,6 +12,7 @@
 	"files.exclude": {
 		"node_modules/": true,
 		"_site/": true,
-		".sass_cache/": true
+		".sass-cache/": true,
+		".jekyll-metadata": true
 	}
 }
