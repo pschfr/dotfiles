@@ -40,7 +40,3 @@ do
 done
 
 echo -e "\n\e[34m\e[1m${REPOS}\e[0m repositories, \e[32m\e[1m${UPDATED}\e[0m up to date, and \e[31m\e[1m${MODIFIED}\e[0m with changes.\n"
-
-# TODO:
-# look inside subdirectories as well
-# alias?
