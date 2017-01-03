@@ -1,7 +1,8 @@
-echo "\n\033[34m\033[1mPaul's Git Status Script v1.0\033[0m\n"
+#!/bin/bash
+echo -e "\n\e[34m\e[1mPaul's Git Status Script v1.1\e[0m\n"
 echo "Enter an absolute directory location, starting with /"
 echo "Press enter for default ($HOME/Dropbox/Work):"
-read ROOT_DIR # absolute location of directory containing multiple git repos
+read -e ROOT_DIR # absolute location of directory containing multiple git repos
 
 if [ -z "$ROOT_DIR" ]; then # if input is empty, use default
 	cd $HOME/Dropbox/Work
@@ -18,7 +19,7 @@ do
 	cd "$DIR"
 	if [ -d ".git" ]; then # if .git folder exists, check status
 		COMMITS=`git rev-list --all --count` # returns number of commits
-		echo "\n\033[34m\033[1m${DIR%?} \033[1;30m${COMMITS} commits\033[0m"
+		echo -e "\n\e[34m\e[1m${DIR%?} \e[1;30m${COMMITS} commits\e[0m"
 
 		if git status -s | read status; then # if modified, print status, otherwise up to date
 			git status -s
@@ -38,9 +39,8 @@ do
 	fi
 done
 
-echo "\n\033[34m\033[1m${REPOS}\033[0m repositories, \033[32m\033[1m${UPDATED}\033[0m up to date, and \033[31m\033[1m${MODIFIED}\033[0m with changes.\n"
+echo -e "\n\e[34m\e[1m${REPOS}\e[0m repositories, \e[32m\e[1m${UPDATED}\e[0m up to date, and \e[31m\e[1m${MODIFIED}\e[0m with changes.\n"
 
 # TODO:
-# Tab completion
 # look inside subdirectories as well
 # alias?
