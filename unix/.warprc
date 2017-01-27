@@ -1,0 +1,5 @@
+# Used in conjuction with the 'zsh' plugin 'wd',allows you to switch
+# directories faster than 'cd', as I can use 'wp work' to go to my work folder,
+# or I can 'wp work;cd photos;git st' to switch to photos and check the status.
+dbpx:~/Dropbox
+work:~/Dropbox/Work

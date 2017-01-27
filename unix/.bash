@@ -29,3 +29,6 @@ alias lights="/home/paul/Dropbox/Work/lights/lights.py"
 # weather and moon aliases
 alias wttr="curl wttr.in/pittsburgh"
 alias moon="curl wttr.in/moon"
+
+# SSH aliases
+alias sshdev="ssh paulmake@paulmakesthe.net -p18765 -i /home/paul/.ssh/siteground.pub"
