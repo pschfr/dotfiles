@@ -18,6 +18,11 @@ alias nb="npm build"
 alias ns="npm start"
 alias nu="npm update"
 
+# Harp aliases
+alias hinit="harp init"
+alias hs="harp server"
+alias hc="harp compile"
+
 # System aliases
 alias update="sudo apt-get update && sudo apt-get upgrade"
 alias fixrotate="xrandr -o normal"
