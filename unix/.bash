@@ -23,7 +23,7 @@ alias update="sudo apt-get update && sudo apt-get upgrade"
 alias fixrotate="xrandr -o normal"
 
 # My personal scripts
-alias status="/home/paul/Dropbox/Work/dotfiles/custom/status.sh"
+alias status="/home/paul/Dropbox/Work/status/status.sh"
 alias lights="/home/paul/Dropbox/Work/lights/lights.py"
 
 # weather and moon aliases
