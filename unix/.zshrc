@@ -1,5 +1,5 @@
 # Theme
-ZSH_THEME="nicoulaj"
+ZSH_THEME="agnoster"
 
 # Adds me as default to hide home directory username
 DEFAULT_USER="paul"
