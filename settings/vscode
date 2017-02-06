@@ -13,6 +13,8 @@
 		"node_modules/": true,
 		"_site/": true,
 		".sass-cache/": true,
-		".jekyll-metadata": true
-	}
+		".jekyll-metadata": true,
+		"www/": true
+	},
+	"window.menuBarVisibility": "toggle"
 }
