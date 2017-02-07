@@ -24,7 +24,7 @@ alias hs="harp server"
 alias hc="harp compile"
 
 # System aliases
-alias update="sudo apt-get update && sudo apt-get upgrade"
+alias update="sudo apt-get update && sudo apt-get upgrade -y"
 alias fixrotate="xrandr -o normal"
 
 # My personal scripts
@@ -37,3 +37,6 @@ alias moon="curl wttr.in/moon"
 
 # SSH aliases
 alias sshdev="ssh paulmake@paulmakesthe.net -p18765 -i /home/paul/.ssh/siteground.pub"
+
+# wuzz, an interactive tool for HTTP inspection
+alias wuzz="sudo docker run -it nevon/wuzz"
