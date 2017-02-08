@@ -16,5 +16,6 @@
 		".jekyll-metadata": true,
 		"www/": true
 	},
-	"window.menuBarVisibility": "toggle"
+	"window.menuBarVisibility": "toggle",
+	"workbench.welcome.enabled": false,
 }
