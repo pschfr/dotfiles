@@ -11,4 +11,4 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins installed
-plugins=(git command-not-found wd)
+plugins=(git command-not-found wd last-working-dir)
