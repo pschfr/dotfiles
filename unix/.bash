@@ -30,6 +30,8 @@ alias fixrotate="xrandr -o normal"
 # My personal scripts
 alias status="/home/paul/Dropbox/Work/status/status.sh"
 alias lights="/home/paul/Dropbox/Work/lights/lights.py"
+alias style="/home/paul/Dropbox/Work/stylish/new.sh"
+alias script="/home/paul/Dropbox/Work/tampermonkey/new.sh"
 
 # weather and moon aliases
 alias wttr="curl wttr.in/pittsburgh"
