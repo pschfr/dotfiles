@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-	"editor.fontFamily": "'Roboto Mono for Powerline', 'Roboto Mono'",
+	"editor.fontFamily": "Fira Code Medium",
 	"editor.scrollBeyondLastLine": false,
 	"editor.insertSpaces": false,
 	"editor.wrappingColumn": -1,
@@ -17,5 +17,6 @@
 		"www/": true
 	},
 	"window.menuBarVisibility": "toggle",
-	"workbench.welcome.enabled": false,
+	"workbench.welcome.enabled": true,
+	"vsicons.projectDetection.disableDetect": true
 }
