@@ -18,6 +18,13 @@ alias nb="npm build"
 alias ns="npm start"
 alias nu="npm update"
 
+# Yarn aliases
+alias yinit="yarn init"
+alias ya="yarn add"
+alias yu="yarn upgrade"
+alias yr="yarn remove"
+alias yi="yarn install"
+
 # Harp aliases
 alias hinit="harp init"
 alias hs="harp server"
