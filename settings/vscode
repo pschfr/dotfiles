@@ -3,12 +3,10 @@
 	"editor.fontFamily": "Fira Code Medium",
 	"editor.scrollBeyondLastLine": false,
 	"editor.insertSpaces": false,
-	"editor.wrappingColumn": -1,
 	"editor.cursorBlinking": "smooth",
 	"editor.fontLigatures": true,
 	"editor.renderWhitespace": "boundary",
 	"terminal.integrated.shell.linux": "/bin/zsh",
-	"vsicons.dontShowNewVersionMessage": true,
 	"files.exclude": {
 		"node_modules/": true,
 		"_site/": true,
@@ -18,5 +16,6 @@
 	},
 	"window.menuBarVisibility": "toggle",
 	"workbench.welcome.enabled": true,
+	"vsicons.dontShowNewVersionMessage": true,
 	"vsicons.projectDetection.disableDetect": true
 }
