@@ -6,8 +6,8 @@ grep --exclude-dir={directory,another} -Rni 'string_goes_here'
 # Jekyll-related aliases
 alias jc="jekyll clean"
 alias jb="jekyll build"
-alias js="jekyll serve"
-alias jl="jekyll liveserve"
+alias js="jekyll serve --drafts"
+alias jl="jekyll liveserve --drafts"
 
 # NPM aliases
 alias ninit="npm init"
@@ -33,10 +33,11 @@ alias hc="harp compile"
 # System aliases
 alias update="sudo apt-get update && sudo apt-get upgrade -y"
 alias fixrotate="xrandr -o normal"
+alias gp="grep -rn"
 
 # My personal scripts
 alias status="/home/paul/Dropbox/Work/status/status.sh"
-alias lights="/home/paul/Dropbox/Work/lights/lights.py"
+alias light="/home/paul/Dropbox/Work/lights/lights.py"
 alias style="/home/paul/Dropbox/Work/stylish/new.sh"
 alias script="/home/paul/Dropbox/Work/tampermonkey/new.sh"
 
