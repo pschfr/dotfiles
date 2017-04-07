@@ -2,6 +2,8 @@
 export GREP_OPTIONS='--color=always'
 grep --exclude-dir={directory,another} -Rni 'string_goes_here'
 
+################################################################################
+
 # Useful aliases
 # Jekyll-related aliases
 alias jc="jekyll clean"
@@ -50,3 +52,11 @@ alias sshdev="ssh paulmake@paulmakesthe.net -p18765 -i /home/paul/.ssh/sitegroun
 
 # wuzz, an interactive tool for HTTP inspection
 alias wuzz="sudo docker run -it nevon/wuzz"
+
+################################################################################
+
+# Small bash functions too add, subtract, multiply, and divide
+add() { echo "scale=5;$1+$2" | bc }
+subtract() { echo "scale=5;$1-$2" | bc }
+multiply() { echo "scale=5;$1*$2" | bc }
+divide() { echo "scale=5;$1/$2" | bc }
