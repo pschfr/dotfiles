@@ -60,3 +60,9 @@ add() { echo "scale=5;$1+$2" | bc }
 subtract() { echo "scale=5;$1-$2" | bc }
 multiply() { echo "scale=5;$1*$2" | bc }
 divide() { echo "scale=5;$1/$2" | bc }
+
+################################################################################
+
+# thefuck - https://github.com/nvbn/thefuck
+eval $(thefuck --alias)
+alias fuck-it='export THEFUCK_REQUIRE_CONFIRMATION=False; fuck; export THEFUCK_REQUIRE_CONFIRMATION=True'
