@@ -61,6 +61,21 @@ subtract() { echo "scale=5;$1-$2" | bc }
 multiply() { echo "scale=5;$1*$2" | bc }
 divide() { echo "scale=5;$1/$2" | bc }
 
+# Opens the GitHub repo in the web browser
+github() {
+	if [ ! -d .git ] ;
+		echo "ERROR: This isnt a git directory"
+		return false
+	fi
+	git_url=`git config --get remote.origin.url`
+	if [[ $git_url != https://github* ]] ;
+		echo "ERROR: Remote origin is not on GitHub"
+		return false
+	fi
+	url=${git_url%.git}
+	open $url
+}
+
 ################################################################################
 
 # thefuck - https://github.com/nvbn/thefuck
