@@ -73,7 +73,7 @@ github() {
 		return false
 	fi
 	url=${git_url%.git}
-	open $url
+	xdg-open $url
 }
 
 ################################################################################
