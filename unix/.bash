@@ -38,7 +38,7 @@ alias fixrotate="xrandr -o normal"
 alias gp="grep -rn"
 
 # My personal scripts
-alias status="/home/paul/Dropbox/Work/status/status.sh"
+alias status="/home/paul/Dropbox/Work/status/status.sh -d"
 alias light="/home/paul/Dropbox/Work/lights/lights.py"
 alias style="/home/paul/Dropbox/Work/stylish/new.sh"
 alias script="/home/paul/Dropbox/Work/tampermonkey/new.sh"
