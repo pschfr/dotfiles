@@ -1,13 +1,16 @@
-# Commands I always forget
-export GREP_OPTIONS='--color=always'
-grep --exclude-dir={directory,another} -Rni 'string_goes_here'
-
-################################################################################
-
 # Useful aliases
+alias gp="grep -rn --color='always'"
+alias ls="ls -lAh"
+
 # Jekyll-related aliases
 alias jc="jekyll clean"
 alias jb="jekyll build"
+alias jd="jekyll draft"
+alias jp="jekyll post"
+alias jpage="jekyll page"
+alias jpb="jekyll publish"
+alias ju="jekyll unpublish"
+alias jn="jekyll new"
 alias js="jekyll serve --drafts"
 alias jl="jekyll liveserve --drafts"
 
