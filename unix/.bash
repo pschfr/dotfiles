@@ -66,12 +66,12 @@ divide() { echo "scale=5;$1/$2" | bc }
 
 # Opens the GitHub repo in the web browser
 github() {
-	if [ ! -d .git ] ;
+	if [ ! -d .git ] ; then
 		echo "ERROR: This isnt a git directory"
 		return false
 	fi
 	git_url=`git config --get remote.origin.url`
-	if [[ $git_url != https://github* ]] ;
+	if [[ $git_url != https://github* ]] ; then
 		echo "ERROR: Remote origin is not on GitHub"
 		return false
 	fi
