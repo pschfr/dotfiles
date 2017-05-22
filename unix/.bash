@@ -1,6 +1,5 @@
-# Useful aliases
-alias gp="grep -rn --color='always'"
-alias ls="ls -lAh"
+# Enable aliases to be sudo'ed
+alias sudo='sudo '
 
 # Jekyll-related aliases
 alias jc="jekyll clean"
@@ -39,6 +38,7 @@ alias hc="harp compile"
 alias update="sudo apt-get update && sudo apt-get upgrade -y"
 alias fixrotate="xrandr -o normal"
 alias gp="grep -rn"
+alias ls="ls -lAh"
 
 # My personal scripts
 alias status="/home/paul/Dropbox/Work/status/status.sh -d"
@@ -77,6 +77,11 @@ github() {
 	fi
 	url=${git_url%.git}
 	xdg-open $url
+}
+
+# Makes cloning from GitHub quicker, see https://gist.github.com/zenorocha/75f9bc7b5bb79653989561bd8d4d0275
+clone() {
+	git clone https://github.com/$1/$2.git
 }
 
 ################################################################################

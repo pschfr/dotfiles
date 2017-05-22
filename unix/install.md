@@ -16,14 +16,20 @@ https://packaging.python.org/installing/
 # node.js
 https://nodejs.org/en/download/package-manager/
 
+# gulp
+`sudo npm install --global gulp-cli`
+
+# diff-so-fancy
+`sudo npm install -g diff-so-fancy`
+
 # gimp
-`sudo apt install gimp`
+`sudo apt install gimp gimp-data gimp-plugin-registry gimp-data-extras`
 
 # vlc
 `sudo apt install vlc`
 
 # 7zip
-`sudo apt install p7zip p7zip-rar`
+`sudo apt install p7zip-full p7zip-rar rar unrar zip unzip`
 
 # vscode
 https://code.visualstudio.com/download
