@@ -4,7 +4,7 @@
 [alias]
 	st = status
 	co = commit -am
-	shit = web--browse http://ohshitgit.com/
+	shit = xdg-open http://ohshitgit.com/
 [credential]
 	helper = cache --timeout=3600
 [core]
