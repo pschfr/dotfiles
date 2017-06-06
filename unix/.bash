@@ -1,5 +1,5 @@
 # Enable aliases to be sudo'ed
-alias sudo='sudo '
+alias sudo="sudo "
 
 # Jekyll-related aliases
 alias jc="jekyll clean"
@@ -41,6 +41,7 @@ alias gp="grep -rn"
 alias ls="ls -lAh"
 
 # My personal scripts
+alias st="/home/paul/Dropbox/Work/status/status.sh -d"
 alias status="/home/paul/Dropbox/Work/status/status.sh -d"
 alias light="/home/paul/Dropbox/Work/lights/lights.py"
 alias style="/home/paul/Dropbox/Work/stylish/new.sh"

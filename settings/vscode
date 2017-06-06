@@ -17,5 +17,8 @@
 	"window.menuBarVisibility": "toggle",
 	"workbench.welcome.enabled": true,
 	"vsicons.dontShowNewVersionMessage": true,
-	"vsicons.projectDetection.disableDetect": true
+	"vsicons.projectDetection.disableDetect": true,
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.colorTheme": "Nord",
+	"window.zoomLevel": 0
 }
