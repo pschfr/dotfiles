@@ -6,6 +6,8 @@
 	"editor.cursorBlinking": "smooth",
 	"editor.fontLigatures": true,
 	"editor.renderWhitespace": "boundary",
+	"editor.renderIndentGuides": false,
+	"editor.multiCursorModifier": "ctrlCmd",
 	"terminal.integrated.shell.linux": "/bin/zsh",
 	"files.exclude": {
 		"node_modules/": true,
