@@ -17,10 +17,9 @@
 		"www/": true
 	},
 	"window.menuBarVisibility": "toggle",
-	"workbench.welcome.enabled": true,
 	"vsicons.dontShowNewVersionMessage": true,
 	"vsicons.projectDetection.disableDetect": true,
 	"workbench.iconTheme": "vscode-icons",
-	"workbench.colorTheme": "Nord",
+	"workbench.colorTheme": "Bimbo Theme",
 	"window.zoomLevel": 0
 }
