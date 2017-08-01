@@ -36,6 +36,7 @@ alias hs="harp server"
 alias hc="harp compile"
 
 # System aliases
+alias i="sudo apt install -y"
 alias update="sudo apt-get update && sudo apt-get upgrade -y"
 alias fixrotate="xrandr -o normal"
 alias gp="grep -rn"
