@@ -46,6 +46,7 @@ alias ls="ls -lAh"
 alias st="/home/paul/Dropbox/Work/status/status.sh -d"
 alias status="/home/paul/Dropbox/Work/status/status.sh -d"
 alias light="/home/paul/Dropbox/Work/lights/lights.py"
+alias lights="/home/paul/Dropbox/Work/lights/lights.py"
 alias style="/home/paul/Dropbox/Work/stylish/new.sh"
 alias script="/home/paul/Dropbox/Work/tampermonkey/new.sh"
 
