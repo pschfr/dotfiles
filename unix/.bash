@@ -41,6 +41,8 @@ alias update="sudo apt-get update && sudo apt-get upgrade -y"
 alias fixrotate="xrandr -o normal"
 alias gp="grep -rn"
 alias ls="ls -lAh"
+alias c="clear"
+alias dl="youtube-dl"
 
 # My personal scripts
 alias st="/home/paul/Dropbox/Work/status/status.sh -d"
@@ -62,7 +64,7 @@ alias wuzz="sudo docker run -it nevon/wuzz"
 
 ################################################################################
 
-# Small bash functions too add, subtract, multiply, and divide
+# Small bash functions to add, subtract, multiply, and divide
 add() { echo "scale=5;$1+$2" | bc }
 subtract() { echo "scale=5;$1-$2" | bc }
 multiply() { echo "scale=5;$1*$2" | bc }
@@ -71,13 +73,13 @@ divide() { echo "scale=5;$1/$2" | bc }
 # Opens the GitHub repo in the web browser
 github() {
 	if [ ! -d .git ] ; then
-		echo "ERROR: This isnt a git directory"
-		return false
+		echo "ERROR: This isn't a git directory!"
+		return 1
 	fi
 	git_url=`git config --get remote.origin.url`
 	if [[ $git_url != https://github* ]] ; then
-		echo "ERROR: Remote origin is not on GitHub"
-		return false
+		echo "ERROR: Remote origin is not on GitHub!"
+		return 1
 	fi
 	url=${git_url%.git}
 	xdg-open $url
