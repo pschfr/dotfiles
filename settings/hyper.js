@@ -1,3 +1,7 @@
+// Future versions of Hyper may add additional config options,
+// which will not automatically be merged into this file.
+// See https://hyper.is#cfg for all currently supported options.
+
 module.exports = {
   config: {
     // default font size in pixels for all tabs
@@ -12,11 +16,14 @@ module.exports = {
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
 
+    // set to true for blinking cursor
+    cursorBlink: false,
+
     // color of the text
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: '#111',
+    backgroundColor: '#000',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -27,10 +34,9 @@ module.exports = {
     // custom css to embed in the terminal window
     termCSS: '',
 
-    // set to `true` if you're using a Linux set up
-    // that doesn't shows native menus
+    // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
-    showHamburgerMenu: 'true',
+    showHamburgerMenu: '',
 
     // set to `false` if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
@@ -64,6 +70,9 @@ module.exports = {
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
+    // make sure to use a full path if the binary name doesn't work
+    // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
+    // if you're using powershell, make sure to remove the `--login` below
     shell: '',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
@@ -79,6 +88,10 @@ module.exports = {
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: true
 
+    // if true, on right click selected text will be copied or pasted if no
+    // selection is present (true by default on Windows)
+    // quickEdit: true
+
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
 
@@ -91,7 +104,9 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: [
+    "hyperline"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

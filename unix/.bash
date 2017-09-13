@@ -11,7 +11,9 @@ alias jpb="jekyll publish"
 alias ju="jekyll unpublish"
 alias jn="jekyll new"
 alias js="bundle exec jekyll serve --drafts"
+alias jps="JEKYLL_ENV=production bundle exec jekyll serve"
 alias jl="bundle exec jekyll liveserve --drafts"
+alias jpl="JEKYLL_ENV=production bundle exec jekyll liveserve"
 
 # NPM aliases
 alias ninit="npm init"
