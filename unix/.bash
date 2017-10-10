@@ -35,6 +35,7 @@ alias yi="yarn install"
 # Harp aliases
 alias hinit="harp init"
 alias hs="harp server"
+alias hps="NODE_ENV=production harp server"
 alias hc="harp compile"
 
 # System aliases
