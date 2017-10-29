@@ -40,7 +40,7 @@ alias hc="harp compile"
 
 # System aliases
 alias i="sudo apt install -y"
-alias update="sudo apt-get update && sudo apt-get upgrade -y"
+alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt clean"
 alias fixrotate="xrandr -o normal"
 alias gp="grep -rn"
 alias ls="ls -lAh"
