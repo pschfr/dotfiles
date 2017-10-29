@@ -18,7 +18,7 @@ alias jpl="JEKYLL_ENV=production bundle exec jekyll liveserve"
 # NPM aliases
 alias ninit="npm init"
 alias ni="npm install"
-alias nig="npm install --global"
+alias nig="sudo npm install --global"
 alias nu="npm uninstall"
 alias nl="npm list"
 alias nb="npm build"
