@@ -43,12 +43,12 @@ alias i="sudo apt install -y"
 alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt clean"
 alias fixrotate="xrandr -o normal"
 alias gp="grep -rn"
-alias ls="ls -lAh"
 alias c="clear"
 alias dl="youtube-dl"
+alias ff="/home/paul/firefox/firefox"
+alias st="git status"
 
 # My personal scripts
-alias st="/home/paul/Dropbox/Work/status/status.sh -d"
 alias status="/home/paul/Dropbox/Work/status/status.sh -d"
 alias light="/home/paul/Dropbox/Work/lights/lights.py"
 alias lights="/home/paul/Dropbox/Work/lights/lights.py"
@@ -130,6 +130,17 @@ extract() {
 			echo "$1 - file does not exist"
 		fi
 	fi
+}
+
+say() {
+	if [[ "${1}" =~ -[a-z]{2} ]]; then
+		local lang=${1#-}
+		local text="${*#$1}"
+	else
+		local lang=${LANG%_*}
+		local text="$*"
+	fi
+	mplayer "https://translate.google.com/translate_tts?ie=UTF-8&tl=${lang}&q=${text}" &> /dev/null
 }
 
 ################################################################################
