@@ -45,7 +45,8 @@ alias fixrotate="xrandr -o normal"
 alias gp="grep -rn"
 alias c="clear"
 alias dl="youtube-dl"
-alias ff="/home/paul/firefox/firefox"
+alias ff="/home/paul/firefox/firefox &"
+alias ch="google-chrome &"
 alias st="git status"
 
 # My personal scripts
