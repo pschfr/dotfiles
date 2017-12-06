@@ -8,16 +8,21 @@
 `sudo apt install python2.7 python3`
 
 # pip
-https://packaging.python.org/installing/
+`sudo apt install python-pip` (see https://packaging.python.org/installing/)
 
 # ruby
 `sudo apt install ruby ruby-dev`
 
 # node.js
+`curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+`sudo apt install nodejs`
 https://nodejs.org/en/download/package-manager/
 
+# npm
+`sudo apt install npm`
+
 # gulp
-`sudo npm install --global gulp-cli`
+`sudo npm install -g gulp-cli`
 
 # diff-so-fancy
 `sudo npm install -g diff-so-fancy`
@@ -44,9 +49,12 @@ https://www.dropbox.com/downloading
 `sudo apt install gparted`
 
 # zsh
+`sudo apt install zsh`
+`chsh -s $(which zsh)`
 https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 
 # oh-my-zsh
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 https://github.com/robbyrussell/oh-my-zsh#basic-installation
 
 # google play music desktop player
@@ -65,13 +73,15 @@ https://www.googleplaymusicdesktopplayer.com/
 `sudo gem install jekyll bundler`
 
 # yarn
+`curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
+`echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
 https://yarnpkg.com/en/docs/install
 
 # firefox
 `sudo apt install firefox`
 
 # chrome
-https://chrome.google.com/download/
+https://www.google.com/chrome/
 
 # conky
 http://packages.ubuntu.com/precise/amd64/conky-all/download
