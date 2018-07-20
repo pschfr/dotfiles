@@ -1,25 +1,38 @@
 # git
-`sudo apt install git-all`
+`sudo apt install -y git-all`
 
 # curl
-`sudo apt install curl`
+`sudo apt install -y curl`
 
 # python
-`sudo apt install python2.7 python3`
+`sudo apt install -y python2.7 python3`
 
 # pip
-`sudo apt install python-pip` (see https://packaging.python.org/installing/)
+`sudo apt install -y python-pip` (see https://packaging.python.org/installing/)
 
 # ruby
-`sudo apt install ruby ruby-dev`
+`sudo apt install -y ruby ruby-dev`
+
+# java
+`sudo apt install -y default-jre`
+
+# apache
+`sudo apt install -y apache2`
+
+# mysql
+`sudo apt install -y mysql-server`
+- Note: use `mysql -h 127.0.0.1 -P 3306 -u root -p` to login to local mysql
+
+# php
+`sudo apt install -y php libapache2-mod-php php-mcrypt php-mysql`
 
 # node.js
 `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
-`sudo apt install nodejs`
+`sudo apt install -y nodejs`
 https://nodejs.org/en/download/package-manager/
 
 # npm
-`sudo apt install npm`
+`sudo apt install -y npm`
 
 # gulp
 `sudo npm install -g gulp-cli`
@@ -28,28 +41,28 @@ https://nodejs.org/en/download/package-manager/
 `sudo npm install -g diff-so-fancy`
 
 # gimp
-`sudo apt install gimp gimp-data gimp-plugin-registry gimp-data-extras`
+`sudo apt install -y gimp gimp-data gimp-plugin-registry gimp-data-extras`
 
 # vlc
-`sudo apt install vlc`
+`sudo apt install -y vlc`
 
 # 7zip
-`sudo apt install p7zip-full p7zip-rar rar unrar zip unzip`
+`sudo apt install -y p7zip-full p7zip-rar rar unrar zip unzip`
 
 # vscode
 https://code.visualstudio.com/download
 
 # filezilla
-`sudo apt install filezilla`
+`sudo apt install -y filezilla`
 
 # dropbox
 https://www.dropbox.com/downloading
 
 # gparted
-`sudo apt install gparted`
+`sudo apt install -y gparted`
 
 # zsh
-`sudo apt install zsh`
+`sudo apt install -y zsh`
 `chsh -s $(which zsh)`
 https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 
@@ -61,10 +74,10 @@ https://github.com/robbyrussell/oh-my-zsh#basic-installation
 https://www.googleplaymusicdesktopplayer.com/
 
 # guake
-`sudo apt install guake`
+`sudo apt install -y guake`
 
 # docky
-`sudo apt install docky`
+`sudo apt install -y docky`
 
 # harp.js
 `sudo npm install -g harp`
@@ -78,7 +91,7 @@ https://www.googleplaymusicdesktopplayer.com/
 https://yarnpkg.com/en/docs/install
 
 # firefox
-`sudo apt install firefox`
+`sudo apt install -y firefox`
 
 # chrome
 https://www.google.com/chrome/
@@ -86,12 +99,21 @@ https://www.google.com/chrome/
 # conky
 http://packages.ubuntu.com/precise/amd64/conky-all/download
 
+# Arc theme
+`sudo apt install -y arc-theme`
+https://github.com/horst3180/arc-theme
+
+# Numix
+`sudo add-apt-repository ppa:numix/ppa`
+`sudo apt update && sudo apt install -y numix-gtk-theme numix-blue-gtk-theme numix-icon-theme`
+https://www.gnome-look.org/p/1013541/
+
 ---
 
 # Fonts
 
 # powerline fonts
-`git clone https://github.com/powerline/fonts.git; cd fonts; ./install.sh; cd ..; rm -rf fonts/;`
+`cd ~/; git clone https://github.com/powerline/fonts.git; cd fonts; ./install.sh; cd ..; rm -rf fonts/;`
 
 # roboto
 https://github.com/google/roboto/releases
