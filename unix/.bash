@@ -2,14 +2,14 @@
 alias sudo="sudo "
 
 # Jekyll-related aliases
-alias jc="jekyll clean"
-alias jb="jekyll build"
-alias jd="jekyll draft"
-alias jp="jekyll post"
-alias jpage="jekyll page"
-alias jpb="jekyll publish"
-alias ju="jekyll unpublish"
-alias jn="jekyll new"
+alias jc="bundle exec jekyll clean"
+alias jb="bundle exec jekyll build"
+alias jd="bundle exec jekyll draft"
+alias jp="bundle exec jekyll post"
+alias jpage="bundle exec jekyll page"
+alias jpb="bundle exec jekyll publish"
+alias ju="bundle exec jekyll unpublish"
+alias jn="bundle exec jekyll new"
 alias js="bundle exec jekyll serve --drafts"
 alias jps="JEKYLL_ENV=production bundle exec jekyll serve"
 alias jl="bundle exec jekyll liveserve --drafts"
@@ -41,6 +41,7 @@ alias hc="harp compile"
 # System aliases
 alias i="sudo apt install -y"
 alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt clean"
+alias restart="sudo service apache2 restart && echo 'apache2 service restarted.'"
 alias fixrotate="xrandr -o normal"
 alias gp="grep -rn"
 alias c="clear"
@@ -143,9 +144,3 @@ say() {
 	fi
 	mplayer "https://translate.google.com/translate_tts?ie=UTF-8&tl=${lang}&q=${text}" &> /dev/null
 }
-
-################################################################################
-
-# thefuck - https://github.com/nvbn/thefuck
-eval $(thefuck --alias)
-alias fuck-it='export THEFUCK_REQUIRE_CONFIRMATION=False; fuck; export THEFUCK_REQUIRE_CONFIRMATION=True'
