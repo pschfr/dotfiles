@@ -74,11 +74,11 @@ alias wall="wal -gi '/home/paul/Dropbox/Wallpapers/'"
 
 # Import colorscheme from 'pywal' asynchronously
 # https://github.com/dylanaraps/pywal/wiki/Getting-Started#applying-the-theme-to-new-terminals
-(cat ~/.cache/wal/sequences &)
+(cat /home/paul/.cache/wal/sequences &)
 
 # Exports pywal colors into the shell
 # https://github.com/dylanaraps/pywal/wiki/Customization#shell-variables
-. "~/.cache/wal/colors.sh"
+. "/home/paul/.cache/wal/colors.sh"
 
 ################################################################################
 
