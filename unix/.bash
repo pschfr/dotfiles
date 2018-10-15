@@ -67,6 +67,19 @@ alias sshdev="ssh paulmake@paulmakesthe.net -p18765 -i /home/paul/.ssh/sitegroun
 # wuzz, an interactive tool for HTTP inspection
 alias wuzz="sudo docker run -it nevon/wuzz"
 
+# pywal generates a color theme from an image in Python
+alias wall="wal -gi '/home/paul/Dropbox/Wallpapers/'"
+
+################################################################################
+
+# Import colorscheme from 'pywal' asynchronously
+# https://github.com/dylanaraps/pywal/wiki/Getting-Started#applying-the-theme-to-new-terminals
+(cat ~/.cache/wal/sequences &)
+
+# Exports pywal colors into the shell
+# https://github.com/dylanaraps/pywal/wiki/Customization#shell-variables
+. "~/.cache/wal/colors.sh"
+
 ################################################################################
 
 # Small bash functions to add, subtract, multiply, and divide
