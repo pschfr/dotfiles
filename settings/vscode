@@ -1,13 +1,12 @@
-// Place your settings in this file to overwrite the default settings
 {
-	"editor.fontFamily": "Fira Code Medium",
+	"editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
 	"editor.scrollBeyondLastLine": false,
 	"editor.insertSpaces": false,
 	"editor.cursorBlinking": "smooth",
 	"editor.fontLigatures": true,
 	"editor.renderWhitespace": "boundary",
 	"editor.renderIndentGuides": false,
-	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.tabCompletion": "on",
 	"terminal.integrated.shell.linux": "/bin/zsh",
 	"files.exclude": {
 		"node_modules/": true,
@@ -16,10 +15,41 @@
 		".jekyll-metadata": true,
 		"www/": true
 	},
-	"window.menuBarVisibility": "toggle",
+	"window.menuBarVisibility": "visible",
+	"window.titleBarStyle": "custom"
+	"window.zoomLevel": 0,
 	"vsicons.dontShowNewVersionMessage": true,
 	"vsicons.projectDetection.disableDetect": true,
 	"workbench.iconTheme": "vs-nomo-dark",
-	"workbench.colorTheme": "Arc Dark",
-	"window.zoomLevel": 0
+	"workbench.colorTheme": "vs-wal",
+	"workbench.statusBar.feedback.visible": false,
+	"workbench.activityBar.visible": true,
+	"cSpell.enabledLanguageIds": [
+		"asciidoc",
+		"c",
+		"cpp",
+		"csharp",
+		"css",
+		"go",
+		"handlebars",
+		"html",
+		"jade",
+		"javascript",
+		"javascriptreact",
+		"json",
+		"latex",
+		"less",
+		"markdown",
+		"php",
+		"plaintext",
+		"pub",
+		"python",
+		"restructuredtext",
+		"rust",
+		"scss",
+		"text",
+		"typescript",
+		"typescriptreact",
+		"yml"
+	]
 }
