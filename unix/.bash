@@ -157,3 +157,11 @@ say() {
 	fi
 	mplayer "https://translate.google.com/translate_tts?ie=UTF-8&tl=${lang}&q=${text}" &> /dev/null
 }
+
+# Fixes Zsh history errors, from https://shapeshed.com/zsh-corrupt-history-file/#making-it-a-script
+fix_zsh() {
+	mv /home/paul/.zsh_history /home/paul/.zsh_history_bad
+	strings /home/paul/.zsh_history_bad > /home/paul/.zsh_history
+	fc -R /home/paul/.zsh_history
+	rm /home/paul/.zsh_history_bad
+}
