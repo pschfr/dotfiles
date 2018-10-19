@@ -16,11 +16,10 @@
 		"www/": true
 	},
 	"window.menuBarVisibility": "visible",
-	"window.titleBarStyle": "custom"
+	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 0,
 	"vsicons.dontShowNewVersionMessage": true,
 	"vsicons.projectDetection.disableDetect": true,
-	"workbench.iconTheme": "vs-nomo-dark",
 	"workbench.colorTheme": "vs-wal",
 	"workbench.statusBar.feedback.visible": false,
 	"workbench.activityBar.visible": true,
