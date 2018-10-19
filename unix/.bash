@@ -147,17 +147,6 @@ extract() {
 	fi
 }
 
-say() {
-	if [[ "${1}" =~ -[a-z]{2} ]]; then
-		local lang=${1#-}
-		local text="${*#$1}"
-	else
-		local lang=${LANG%_*}
-		local text="$*"
-	fi
-	mplayer "https://translate.google.com/translate_tts?ie=UTF-8&tl=${lang}&q=${text}" &> /dev/null
-}
-
 # Fixes Zsh history errors, from https://shapeshed.com/zsh-corrupt-history-file/#making-it-a-script
 fix_zsh() {
 	mv /home/paul/.zsh_history /home/paul/.zsh_history_bad
