@@ -70,6 +70,9 @@ alias wuzz="sudo docker run -it nevon/wuzz"
 # pywal generates a color theme from an image in Python
 alias wall="wal -gi '/home/paul/Dropbox/Wallpapers/'"
 
+# Add an "alert" alias for long running commands.  Use like so: sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
 ################################################################################
 
 # Import colorscheme from 'pywal' asynchronously
