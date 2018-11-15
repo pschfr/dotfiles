@@ -38,6 +38,11 @@ alias hs="harp server"
 alias hps="NODE_ENV=production harp server"
 alias hc="harp compile"
 
+# Middleman aliases
+alias m="bundle exec middleman server"
+alias mb="middleman build"
+alias minit="middleman init"
+
 # System aliases
 alias i="sudo apt install -y"
 alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt clean"
