@@ -103,7 +103,14 @@ github() {
 		return 1
 	fi
 	git_url=`git config --get remote.origin.url`
-	if [[ $git_url != https://github* ]] ; then
+	if [[ $git_url == *"github"* ]] ; then
+		if [[ $git_url != https://github* ]] ; then
+			echo "WARNING: this is a SSH repo at ${git_url}. Attempting conversion..."
+			git_url=${git_url/git@/''}
+			git_url=${git_url/:/'/'}
+			git_url="https://${git_url}"
+		fi
+	else
 		echo "ERROR: Remote origin is not on GitHub!"
 		return 1
 	fi
