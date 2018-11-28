@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Enable aliases to be sudo'ed
 alias sudo="sudo "
 
@@ -91,10 +92,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 ################################################################################
 
 # Small bash functions to add, subtract, multiply, and divide
-add() { echo "scale=5;$1+$2" | bc }
-subtract() { echo "scale=5;$1-$2" | bc }
-multiply() { echo "scale=5;$1*$2" | bc }
-divide() { echo "scale=5;$1/$2" | bc }
+add() { echo "scale=5;$1+$2" | bc; }
+subtract() { echo "scale=5;$1-$2" | bc; }
+multiply() { echo "scale=5;$1*$2" | bc; }
+divide() { echo "scale=5;$1/$2" | bc; }
 
 # Opens the GitHub repo in the web browser
 github() {
@@ -126,7 +127,7 @@ clone() {
 # Creates a directory, then enters it
 mcd () {
 	mkdir -p $1
-	cd $1
+	cd $1 || exit
 }
 
 # https://github.com/xvoland/Extract
