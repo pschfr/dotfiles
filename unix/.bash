@@ -24,6 +24,7 @@ alias nu="npm uninstall"
 alias nl="npm list"
 alias nb="npm build"
 alias ns="npm start"
+alias nsv="npm serve"
 alias nu="npm update"
 
 # Yarn aliases
@@ -55,6 +56,7 @@ alias dl="youtube-dl"
 alias ff="/home/paul/firefox/firefox &"
 alias ch="google-chrome &"
 alias st="git status"
+alias mc="/home/paul/Documents/minecraft-launcher-2.1.1431/minecraft-launcher.sh"
 
 # My personal scripts
 alias status="/home/paul/Dropbox/Work/status/status.sh -d"

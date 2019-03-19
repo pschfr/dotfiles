@@ -3,8 +3,7 @@
 	"editor.scrollBeyondLastLine": false,
 	"editor.insertSpaces": false,
 	"editor.cursorBlinking": "smooth",
-	"editor.fontLigatures": true,
-	"editor.renderWhitespace": "boundary",
+    "editor.fontLigatures": true,
 	"editor.renderIndentGuides": false,
 	"editor.tabCompletion": "on",
 	"terminal.integrated.shell.linux": "/bin/zsh",
@@ -14,11 +13,10 @@
 		".sass-cache/": true,
 		".jekyll-metadata": true
 	},
-    "window.menuBarVisibility": "visible",
+    "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
 	"vsicons.dontShowNewVersionMessage": true,
     "vsicons.projectDetection.disableDetect": true,
-	"workbench.colorTheme": "vs-wal",
 	"workbench.statusBar.feedback.visible": false,
 	"workbench.activityBar.visible": true,
 	"cSpell.enabledLanguageIds": [
@@ -49,9 +47,12 @@
         "typescriptreact",
         "yml"
     ],
-    "window.titleBarStyle": "custom",
     "cSpell.userWords": [
         "tmdb",
-        "watchlist"
+        "watchlist",
+        "barcode",
+        "barcoded",
+        "barcodes",
+        "config"
     ]
 }
