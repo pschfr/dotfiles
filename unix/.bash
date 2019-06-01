@@ -13,8 +13,8 @@ alias ju="bundle exec jekyll unpublish"
 alias jn="bundle exec jekyll new"
 alias js="bundle exec jekyll serve --drafts"
 alias jps="JEKYLL_ENV=production bundle exec jekyll serve"
-alias jl="bundle exec jekyll liveserve --drafts"
-alias jpl="JEKYLL_ENV=production bundle exec jekyll liveserve"
+alias jl="bundle exec jekyll serve --drafts --livereload"
+alias jpl="JEKYLL_ENV=production bundle exec jekyll serve --livereload"
 
 # NPM aliases
 alias ninit="npm init"
@@ -76,7 +76,7 @@ alias sshdev="ssh paulmake@paulmakesthe.net -p18765 -i /home/paul/.ssh/sitegroun
 alias wuzz="sudo docker run -it nevon/wuzz"
 
 # pywal generates a color theme from an image in Python
-alias wall="wal -gi '/home/paul/Dropbox/Wallpapers/'"
+alias wall="wal -i '/home/paul/Dropbox/Wallpapers/'"
 
 # Add an "alert" alias for long running commands.  Use like so: sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
