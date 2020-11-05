@@ -85,5 +85,8 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Actually load in my aliases
+source /home/paul/Dropbox/Work/dotfiles/unix/.bash
+
 # Adds me as default to hide home directory username
 DEFAULT_USER="paul"
