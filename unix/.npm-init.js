@@ -8,7 +8,7 @@ const projectUrl = `https://github.com/pschfr/${projectName}`
 // Exported to package.json
 module.exports = {
   'name': projectName,
-  'author': 'Paul Schaefer <hello@paulmakesthe.net> (https://paulmakesthe.net/)',
+  'author': 'Paul Schaefer <yeppaul2@gmail.com> (https://paulmakesthe.net/)',
   'version': '0.0.1',
   'license': 'MIT',
   'repository': {
