@@ -1,11 +1,15 @@
 # dotfiles
 A place for me to store my dotfiles, for example: sublime settings, .gitconfigs, bash and zsh configuration.
 
-## Settings
+## [Settings](settings/)
 Contains tweaked settings for [VS Code](https://github.com/Microsoft/vscode), [Sublime](https://www.sublimetext.com/3), and [Hyper](https://github.com/zeit/hyper).
 
-## Unix
+## [Unix](unix/)
 `bash` contains commands I often forget and useful aliases, `zshrc` is [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)-specific settings, `gitconfig` is obviously git-specific settings, and lastly `warprc` is for a `zsh` plugin that quickly change directories.
+
+
+## [Docs](docs/)
+Contains [Arch](docs/arch.md) and [Ubuntu](docs/ubuntu.md) specific documention of sorts, as well as a [list](docs/vscode-plugins.md) of Visual Studio Code plugins.
 
 Feel free to fork this repo to use it for yourself. Or don't.
 
