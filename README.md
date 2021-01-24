@@ -1,5 +1,11 @@
 # dotfiles
-A place for me to store my dotfiles, for example: sublime settings, .gitconfigs, bash and zsh configuration.
+A place for me to store my dotfiles, for example: sublime settings, `.gitconfigs`, `bash` and `zsh` configuration.
+
+Feel free to fork this repo to use it for yourself. Or don't.
+
+Also check out [`status`](https://github.com/pschfr/status), a script for checking the status of multiple repositories at once, and [`conky`](https://github.com/pschfr/conky), my theme for the system-information program for Linux systems.
+
+---
 
 ## [Settings](settings/)
 Contains tweaked settings for [VS Code](https://github.com/Microsoft/vscode), [Sublime](https://www.sublimetext.com/3), and [Hyper](https://github.com/zeit/hyper).
@@ -11,10 +17,7 @@ Contains tweaked settings for [VS Code](https://github.com/Microsoft/vscode), [S
 ## [Docs](docs/)
 Contains [Arch](docs/arch.md) and [Ubuntu](docs/ubuntu.md) specific documention of sorts, as well as a [list](docs/vscode-plugins.md) of Visual Studio Code plugins.
 
-Feel free to fork this repo to use it for yourself. Or don't.
-
-Be sure to check out [`status`](https://github.com/pschfr/status), a script for checking the status of multiple repositories at once, and [`conky`](https://github.com/pschfr/conky), my theme for the system-information program for Linux systems.
-
+---
 
 ## Things to Install First and Other Setup Steps
 1. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
