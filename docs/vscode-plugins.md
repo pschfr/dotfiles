@@ -13,5 +13,8 @@
 ### [VSCode Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 `ext install vscode-icons-team.vscode-icons`
 
+### [Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented)
+`ext install Syler.sass-indented`
+
 # Install Them All
-`ext install CoenraadS.bracket-pair-colorizer eamodio.gitlens shd101wyy.markdown-preview-enhanced jolaleye.horizon-theme-vscode vscode-icons-team.vscode-icons`
+`ext install CoenraadS.bracket-pair-colorizer eamodio.gitlens shd101wyy.markdown-preview-enhanced jolaleye.horizon-theme-vscode vscode-icons-team.vscode-icons Syler.sass-indented`
