@@ -16,4 +16,4 @@ Be sure to check out [`status`](https://github.com/pschfr/status), a script for 
 1. Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
 2. Replace `.zshrc`, `.warprc`, `.gitconfig`, and `.npm-init.js` in home directory with their respective files. `cp dotfiles/unix/{.zshrc,.warprc,.gitconfig,.npm-init.js} ~/`.
 3. Replace settings for VS Code, Hyper, and Sublime.
-4. Install desired programs from [`install.md`](docs/install.md) and plugins from [`vscode-plugins.md`](docs/vscode-plugins.md).
+4. Install desired programs from [`ubuntu.md`](docs/ubuntu.md) and plugins from [`vscode-plugins.md`](docs/vscode-plugins.md).
