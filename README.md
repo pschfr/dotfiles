@@ -15,7 +15,7 @@ Contains tweaked settings for [VS Code](https://github.com/Microsoft/vscode), [S
 
 
 ## [Docs](docs/)
-Contains [Arch](docs/arch.md) and [Ubuntu](docs/ubuntu.md) specific documention of sorts, as well as a [list](docs/vscode-plugins.md) of Visual Studio Code plugins.
+Contains [Arch](docs/arch.md), [Ubuntu](docs/ubuntu.md), and [Windows 10](docs/win10.md) specific documention of sorts, as well as a [list](docs/vscode-plugins.md) of Visual Studio Code plugins.
 
 ---
 
