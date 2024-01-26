@@ -26,6 +26,7 @@ recent notes on what helps with the Windows 10 experience
 ## Other cool things
 - [WinXCorners](https://github.com/vhanla/winxcorners) - Linux-like hotcorners
 - [PowerToys](https://github.com/microsoft/PowerToys) - A collection of useful tools
+- [AltDrag](https://github.com/stefansundin/altdrag) - Enables Linux-like hold alt and drag window functionality
 
 ## TODO:
 - [ ] White icons in taskbar
