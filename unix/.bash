@@ -85,11 +85,11 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Import colorscheme from 'pywal' asynchronously
 # https://github.com/dylanaraps/pywal/wiki/Getting-Started#applying-the-theme-to-new-terminals
-(cat /home/paul/.cache/wal/sequences &)
+# (cat /home/paul/.cache/wal/sequences &)
 
 # Exports pywal colors into the shell
 # https://github.com/dylanaraps/pywal/wiki/Customization#shell-variables
-. "/home/paul/.cache/wal/colors.sh"
+# . "/home/paul/.cache/wal/colors.sh"
 
 ################################################################################
 

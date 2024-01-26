@@ -70,9 +70,6 @@ https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 https://github.com/robbyrussell/oh-my-zsh#basic-installation
 
-# google play music desktop player
-https://www.googleplaymusicdesktopplayer.com/
-
 # guake
 `sudo apt install -y guake`
 
@@ -113,7 +110,7 @@ https://www.gnome-look.org/p/1013541/
 # Fonts
 
 # powerline fonts
-`cd ~/; git clone https://github.com/powerline/fonts.git; cd fonts; ./install.sh; cd ..; rm -rf fonts/;`
+`sudo apt install fonts-powerline`
 
 # roboto
 https://github.com/google/roboto/releases
