@@ -106,7 +106,3 @@ source /home/paul/Dropbox/Work/dotfiles/unix/.bash
 # Adds me as default to hide home directory username
 DEFAULT_USER="paul"
 
-# Load rbenv automatically by appending
-# the following to ~/.zshrc:
-
-eval "$(rbenv init -)"
