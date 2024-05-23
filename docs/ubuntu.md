@@ -8,7 +8,8 @@
 `sudo apt install -y python2.7 python3`
 
 # pip
-`sudo apt install -y python-pip` (see https://packaging.python.org/installing/)
+`sudo apt install -y python-pip`<br>
+https://packaging.python.org/installing/
 
 # ruby
 `sudo apt install -y ruby ruby-dev`
@@ -27,8 +28,8 @@
 `sudo apt install -y php libapache2-mod-php php-mcrypt php-mysql`
 
 # node.js
-`curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
-`sudo apt install -y nodejs`
+`curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`<br>
+`sudo apt install -y nodejs`<br>
 https://nodejs.org/en/download/package-manager/
 
 # npm
@@ -62,12 +63,12 @@ https://www.dropbox.com/downloading
 `sudo apt install -y gparted`
 
 # zsh
-`sudo apt install -y zsh`
-`chsh -s $(which zsh)`
+`sudo apt install -y zsh`<br>
+`chsh -s $(which zsh)`<br>
 https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 
 # oh-my-zsh
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`<br>
 https://github.com/robbyrussell/oh-my-zsh#basic-installation
 
 # guake
@@ -83,8 +84,8 @@ https://github.com/robbyrussell/oh-my-zsh#basic-installation
 `sudo gem install jekyll bundler`
 
 # yarn
-`curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
-`echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
+`curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`<br>
+`echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`<br>
 https://yarnpkg.com/en/docs/install
 
 # firefox
@@ -97,12 +98,12 @@ https://www.google.com/chrome/
 http://packages.ubuntu.com/precise/amd64/conky-all/download
 
 # Arc theme
-`sudo apt install -y arc-theme`
+`sudo apt install -y arc-theme`<br>
 https://github.com/horst3180/arc-theme
 
 # Numix
-`sudo add-apt-repository ppa:numix/ppa`
-`sudo apt update && sudo apt install -y numix-gtk-theme numix-blue-gtk-theme numix-icon-theme`
+`sudo add-apt-repository ppa:numix/ppa`<br>
+`sudo apt update && sudo apt install -y numix-gtk-theme numix-blue-gtk-theme numix-icon-theme`<br>
 https://www.gnome-look.org/p/1013541/
 
 ---
@@ -116,12 +117,12 @@ https://www.gnome-look.org/p/1013541/
 https://github.com/google/roboto/releases
 
 ### fira code
-https://github.com/tonsky/FiraCode/releases
+https://github.com/tonsky/FiraCode/releases<br>
 https://github.com/tonsky/FiraCode/wiki
 
 ### source code/sans/serif pro
-https://github.com/adobe-fonts/source-code-pro/releases
-https://github.com/adobe-fonts/source-sans-pro/releases
+https://github.com/adobe-fonts/source-code-pro/releases<br>
+https://github.com/adobe-fonts/source-sans-pro/releases<br>
 https://github.com/adobe-fonts/source-serif-pro/releases
 
 ### palentino linotype
@@ -134,7 +135,7 @@ https://www.linotype.com/57056/palatino-linotype-family.html
 
 ### Resets the `Alt` drag key from `Super` back to `Alt`
 `gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Alt>`<br>
-`gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true`
+`gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true`<br>
 https://askubuntu.com/a/1426306
 
 ### Enables click-to-minimize on the dock
