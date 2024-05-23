@@ -109,20 +109,39 @@ https://www.gnome-look.org/p/1013541/
 
 # Fonts
 
+<<<<<<< HEAD
 # powerline fonts
 `sudo apt install fonts-powerline`
+=======
+### powerline fonts
+`cd ~/; git clone https://github.com/powerline/fonts.git; cd fonts; ./install.sh; cd ..; rm -rf fonts/;`
+>>>>>>> fd81853 (added new ubuntu 22.04 section, misc Win10 tweaks)
 
-# roboto
+### roboto
 https://github.com/google/roboto/releases
 
-# fira code
+### fira code
 https://github.com/tonsky/FiraCode/releases
 https://github.com/tonsky/FiraCode/wiki
 
-# source code/sans/serif pro
+### source code/sans/serif pro
 https://github.com/adobe-fonts/source-code-pro/releases
 https://github.com/adobe-fonts/source-sans-pro/releases
 https://github.com/adobe-fonts/source-serif-pro/releases
 
-# palentino linotype
+### palentino linotype
 https://www.linotype.com/57056/palatino-linotype-family.html
+
+
+---
+
+# Ubuntu 22.04+ specific tweaks
+
+### Resets the `Alt` drag key from `Super` back to `Alt`
+`gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Alt>`
+`gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true`
+https://askubuntu.com/a/1426306
+
+### Enables click-to-minimize on the dock
+`gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
+https://itsfoss.com/click-to-minimize-ubuntu/
