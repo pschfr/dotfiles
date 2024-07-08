@@ -94,6 +94,9 @@ https://yarnpkg.com/en/docs/install
 # chrome
 https://www.google.com/chrome/
 
+# fastfetch
+https://github.com/fastfetch-cli/fastfetch
+
 # conky
 http://packages.ubuntu.com/precise/amd64/conky-all/download
 
@@ -105,6 +108,15 @@ https://github.com/horst3180/arc-theme
 `sudo add-apt-repository ppa:numix/ppa`<br>
 `sudo apt update && sudo apt install -y numix-gtk-theme numix-blue-gtk-theme numix-icon-theme`<br>
 https://www.gnome-look.org/p/1013541/
+
+---
+
+# Jellyfin 
+`curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash`<br>
+https://jellyfin.org/docs/general/installation/linux/#repository-automatic
+### Allows jellyfin to see external drives
+`sudo chgrp -R jellyfin /media/paul/`<br>
+`sudo chmod g+rwx /media/paul/`
 
 ---
 
@@ -134,10 +146,14 @@ https://www.linotype.com/57056/palatino-linotype-family.html
 # Ubuntu 22.04+ specific tweaks
 
 ### Resets the `Alt` drag key from `Super` back to `Alt`
-`gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Alt>`<br>
+`gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier '<Alt>'`<br>
 `gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true`<br>
 https://askubuntu.com/a/1426306
 
 ### Enables click-to-minimize on the dock
 `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`<br>
 https://itsfoss.com/click-to-minimize-ubuntu/
+
+### Re-enables double-click to install .deb files
+`sudo apt install gdebi`<br>
+https://askubuntu.com/a/1512228
