@@ -157,3 +157,7 @@ https://itsfoss.com/click-to-minimize-ubuntu/
 ### Re-enables double-click to install .deb files
 `sudo apt install gdebi`<br>
 https://askubuntu.com/a/1512228
+
+### Proper GNOME extension management program
+`sudo apt install gnome-shell-extension-manager`<br>
+https://itsfoss.com/extension-manager/
